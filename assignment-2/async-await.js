@@ -18,10 +18,10 @@ function getData(uId) {
 //Solution :
 
 function getData(uId){
-    setTimeout(() => {
-    console.log("Fetched the data!");
-    return `${uId}@gmail.com`;
-    }, 4000);
+    return new Promise(resolve => setTimeout(() => {
+        console.log("Fetched the data!");
+        resolve(`${uId}@gmail.com`); 
+        }, 4000));   
 }
 
 async function asyncCall(){
