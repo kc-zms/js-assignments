@@ -1,0 +1,158 @@
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2,h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.table-position{
+    margin-left: 170px;
+}
+
+.menu-position{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+
+.tables{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px;
+    width: 45%;
+    overflow-y: scroll;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+th,td { padding: 15px;}
+
+.menu{
+    height: 600px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    overflow-y: scroll;
+    border-left: 5px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+.tableComponent{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+    width: 550px;
+}
+
+.itemComponent{
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    height: 130px;
+    width: 85%;
+}
+
+.table-search{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.menu-search{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+
+#modal{
+    border-radius: 10px;
+    border: 1px solid black;
+    display: none;
+    position:  absolute;
+    height: 800px;
+    width: 700px;
+    top: 100px;
+    left: 500px;
+    background-color: white;
+    text-align: center;
+}
+
+.input-table{
+    float: left; 
+    width: 95%;
+    margin-bottom: 30px;
+    border-style: outset;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.input-item{
+    float: left; 
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-style: outset;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: #3D4EAD ;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.quantity{
+    font-size: 20px;
+    border-style: outset;
+}
+
+.inc-dec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
